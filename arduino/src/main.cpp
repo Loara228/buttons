@@ -33,15 +33,15 @@ void loop()
 {
     if (btn2.isPressed())
     {
-        send_command("test 2");
+        send_command("runfile network_restart");
     }
     if (btn4.isPressed())
     {
-        send_command("test 4");
+        send_command("runfile avreg_restart");
     }
     if (btn6.isPressed())
     {
-        send_command("test 6");
+        send_command("runfile test");
     }
 
     btn2.tick();

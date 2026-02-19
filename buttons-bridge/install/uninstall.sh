@@ -2,7 +2,7 @@
 
 SERVICE_NAME="buttons-bridge.service"
 
-echo "--- Удаление TactSwitch Service ---"
+echo "--- Удаление buttons-bridge Service ---"
 
 if systemctl is-active --quiet $SERVICE_NAME; then
     echo "Остановка службы..."

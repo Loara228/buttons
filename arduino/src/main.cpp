@@ -9,8 +9,6 @@ Button btn2 = Button(2); // digital 2
 
 void setup()
 {
-    Serial.begin(115200);
-
     pinMode(PIN_BUZZER, OUTPUT);
     tone(PIN_BUZZER, 1000);
     delay(200);
@@ -19,6 +17,8 @@ void setup()
     tone(PIN_BUZZER, 1000);
     delay(200);
     noTone(PIN_BUZZER);
+    
+    Serial.begin(115200);
 }
 
 void send_command(const char *command)
